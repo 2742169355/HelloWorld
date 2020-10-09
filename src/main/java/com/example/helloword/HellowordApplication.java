@@ -1,5 +1,6 @@
 package com.example.helloword;
 
+import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HellowordApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HellowordApplication.class, args);
+//        SpringApplication.run(HellowordApplication.class, args);
+        SpringApplication sApp = new SpringApplication(HellowordApplication.class);
+        sApp.setBannerMode(Banner.Mode.OFF);
+        sApp.run(args);
     }
 
 }

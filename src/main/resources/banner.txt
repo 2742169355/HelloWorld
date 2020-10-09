@@ -1,0 +1,2 @@
+${AnsiBackground.BRIGHT_RED}
+${spring-boot.formatted-version}
